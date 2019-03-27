@@ -7,11 +7,11 @@ What is Song Database
 
 The most important concept in a music app is a song. And everything else connects to song directly or indirectly. For example:
 
-- an Album is a collection of songs.
-- an Artist is the author of a collection of songs; Each song is associated with at least on Artist (Unknown Artist is also an artist).
-- a Playlist is also a collection of songs.
-- a User listens songs.
-- a Queue is a list of songs been played by a user in time order.
+- an ``Album`` is a collection of songs.
+- an ``Artist`` is the author of a collection of songs; Each song is associated with at least on Artist (Unknown Artist is also an artist).
+- a ``Playlist`` is also a collection of songs.
+- a ``User`` listens songs.
+- a ``Queue`` is a list of songs been played by a user in time order.
 - etc ...
 
 So the song database is extremely important in our business.
@@ -28,13 +28,26 @@ what a user could do on Spotify App?
 2. Search artist, album, playlist by ...
 3. Find out songs and album published by an artist ...
 4. Create their own playlist, and manage it.
-5. Like a song, save album, subscribe a playlist.
+5. Like a song, save album, follow an artist, subscribe a playlist, ...
 6. Randomly browse songs by genre, artist, other user TOP x billboard list.
 7. Ask Spotify to recommend songs by song, playlist, album, artist, genre ...
 
+**Query Pattern: real time query**
 
-**Analysis** of the query pattern:
+- My Library Page: list all saved songs
+- My Library Page: list all saved albums
+- My Library Page: list followed artists
+- My Library Page: list saved playlist
+- My Library Page: list recent listening queue
+- Go Album: list all songs in the album
+- Go Artist: list all songs / album created by the artist
 
+**Query Pattern: non real time query**
+
+- Monthly listeners for an Artist
+- Total listened for a song
+- Number of follower for an Artist
+- Number of subscription for a list
 
 **Scale of the database**:
 
